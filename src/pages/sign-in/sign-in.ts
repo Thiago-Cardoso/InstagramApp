@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
 import { AuthProvider } from '../../providers/auth/auth';
  
@@ -10,9 +10,14 @@ import { AuthProvider } from '../../providers/auth/auth';
 })
 export class SignInPage {
  
-  constructor(private auth: AuthProvider) {}
+  constructor(private auth: AuthProvider, private navCtrl: NavController) {}
  
-  onLogin(form: NgForm){
+  onLogin(form: NgForm) {
     this.auth.login(form.value.email, form.value.password);
   }
+ 
+  goToSignUpPage() {
+    this.navCtrl.push("SignUpPage");
+  }
+ 
 }

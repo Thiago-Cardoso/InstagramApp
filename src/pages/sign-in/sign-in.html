@@ -27,8 +27,10 @@
  
       <ion-row margin-top>
         <ion-col>
-          <button ion-button type="submit" block color="purple" [disabled]="form.invalid">LOGIN</button>
-          <button ion-button type="button" block clear color="purple">I don't have an account</button>
+          <button ion-button type="submit" block color="purple" [disabled]="form.invalid">SIGN UP</button>
+          <button ion-button type="button" block clear color="yellow" (click)="goToSignUpPage()">
+            I don't have an account
+          </button>
         </ion-col>
       </ion-row>
     </ion-grid>
