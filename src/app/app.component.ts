@@ -9,7 +9,7 @@ import { AuthProvider } from '../providers/auth/auth';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:string = "TabsPage";
+  rootPage:string = "SignInPage";
  
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private auth: AuthProvider) {
     platform.ready().then(() => {

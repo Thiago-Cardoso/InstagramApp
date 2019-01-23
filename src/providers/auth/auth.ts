@@ -38,7 +38,7 @@ export class AuthProvider {
   }
 
 
-  login(email: string, password: String) {
+  login(email: String, password: String) {
     this.http.post(`${API_URL}/users/sign_in`, { user: { email: email, password: password } })
       .subscribe((data) => {
         this.setUser(data);
