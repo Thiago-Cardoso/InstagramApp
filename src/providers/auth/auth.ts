@@ -69,6 +69,10 @@ export class AuthProvider {
     this.storage.set('user', user);
   }
 
+  get currentUser() {
+    return this._currentUser;
+  }
+
 
   private showToast(message, duration = 5000) {
     this.toastr.create({
