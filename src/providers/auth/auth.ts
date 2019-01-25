@@ -80,4 +80,5 @@ export class AuthProvider {
       duration: duration
     }).present();
   }
+  
 }

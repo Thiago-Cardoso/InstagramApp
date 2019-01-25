@@ -3,6 +3,7 @@ import { IonicModule } from 'ionic-angular';
 import { HeaderComponent } from './header/header';
 import { PostListComponent } from './post-list/post-list';
 import { ProfileComponent } from './profile/profile';
+
 @NgModule({
 	declarations: [HeaderComponent,
     PostListComponent,
