@@ -1,7 +1,3 @@
-<!-- Generated template for the FollowingComponent component -->
-<div>
-  Default
-
 <button ion-button icon-only color="secondary" *ngIf="!isFollowing" (click)="followEvent.emit(true)">
   <ion-icon name="checkmark-circle"></ion-icon>
 </button>
@@ -9,12 +5,3 @@
 <button ion-button icon-only color="danger" *ngIf="isFollowing" (click)="followEvent.emit(false)">
   <ion-icon name="close-circle"></ion-icon>
 </button>
-
- <ion-button icon-only color="secondary" *ngIf="!isFollowing" (click)="followEvent.emit(true)">
-  <ion-icon name="checkmark-circle"></ion-icon>
-</button>
- 
-<button ion-button icon-only color="danger" *ngIf="isFollowing" (click)="followEvent.emit(false)">
-  <ion-icon name="close-circle"></ion-icon>
-</button>
-</div>
